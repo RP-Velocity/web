@@ -1,7 +1,18 @@
 {
   "permissions": {
     "allow": [
-      "Bash(node -e \"console.log\\(require\\('next/package.json'\\).version\\)\")"
+      "Bash(node -e \"console.log\\(require\\('next/package.json'\\).version\\)\")",
+      "Bash(git commit *)",
+      "Bash(git add *)",
+      "Bash(git checkout *)",
+      "Bash(npm run *)",
+      "Bash(npx --no-install playwright --version)",
+      "Read(//Applications/Google Chrome.app/**)",
+      "Read(//private/tmp/**)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(git merge --no-ff feat/cookie-consent -m 'Merge branch '\\\\''feat/cookie-consent'\\\\'' *)",
+      "Bash(git branch *)",
+      "Bash(git push *)"
     ]
   }
 }
