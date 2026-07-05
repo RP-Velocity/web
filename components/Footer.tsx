@@ -1,4 +1,5 @@
 import BrandMark from "./BrandMark";
+import CookieSettingsLink from "./CookieSettingsLink";
 import s from "./interactive.module.css";
 
 export default function Footer() {
@@ -26,6 +27,7 @@ export default function Footer() {
           <a href="#hero" className={s.footerLink} style={{ fontFamily: "var(--font-mono-stack)", fontSize: 14 }}>
             LinkedIn
           </a>
+          <CookieSettingsLink />
           <a href="#hero" className={s.footerLink} style={{ fontFamily: "var(--font-mono-stack)", fontSize: 14 }}>
             Adatvédelem
           </a>

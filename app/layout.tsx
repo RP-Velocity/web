@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import CookieConsent from "@/components/CookieConsent";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-sans",
@@ -28,7 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="hu" className={`${spaceGrotesk.variable} ${jetBrainsMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieConsent />
+      </body>
     </html>
   );
 }
