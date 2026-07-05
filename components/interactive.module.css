@@ -59,3 +59,38 @@
 .footerLink:hover {
   color: var(--text-primary);
 }
+
+.consentPrimary {
+  font-weight: 600;
+  color: var(--bg-void);
+  background: var(--blue);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.consentPrimary:hover {
+  background: var(--blue-hover);
+}
+
+.consentGhost {
+  color: var(--text-primary);
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+.consentGhost:hover {
+  border-color: var(--blue);
+}
+
+.consentSwitch {
+  accent-color: var(--blue);
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.consentSwitch:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
