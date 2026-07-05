@@ -1,0 +1,61 @@
+.navLink {
+  font-size: 15px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.navLink:hover {
+  color: var(--text-primary);
+}
+
+.navCta {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--bg-void);
+  background: var(--blue);
+  padding: 10px 22px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.navCta:hover {
+  background: var(--blue-hover);
+}
+
+.btnPrimary {
+  font-weight: 600;
+  color: var(--bg-void);
+  background: var(--blue);
+  text-decoration: none;
+  transition: background 0.2s ease;
+  display: inline-block;
+}
+.btnPrimary:hover {
+  background: var(--blue-hover);
+}
+
+.btnSecondary {
+  color: var(--text-primary);
+  border: 1px solid var(--border-strong);
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+  display: inline-block;
+}
+.btnSecondary:hover {
+  border-color: var(--blue);
+}
+
+.card {
+  transition: border-color 0.2s ease;
+}
+.card:hover {
+  border-color: var(--blue);
+}
+
+.footerLink {
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+.footerLink:hover {
+  color: var(--text-primary);
+}
