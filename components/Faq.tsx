@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 const faqs = [
   {
     q: "Mennyibe kerül egy projekt?",
-    a: "A felmérés ingyenes, utána fix áras ajánlatot adunk - nincs óradíjas bizonytalanság. A hatókört úgy szabjuk, hogy a befektetés a mért megtakarításból belátható időn belül megtérüljön.",
+    a: "A felmérés ingyenes, utána fix áras ajánlatot adunk - nincs óradíjas bizonytalanság. A hatókört úgy szabjuk, hogy a befektetés a megtakarításból belátható időn belül megtérüljön.",
   },
   {
     q: "Mennyi idő alatt lesz kész?",
@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "Kis cégnek is megéri?",
-    a: "Gyakran nekik éri meg a legjobban: ahol néhány ember visz mindent, ott egy-egy automatizált folyamat aránylag a legtöbb időt szabadítja fel. A hatókört a cég méretéhez igazítjuk.",
+    a: "Gyakran nekik éri meg a legjobban: ahol néhány ember visz mindent, ott egy-egy automatizált folyamat aránylag több időt szabadít fel. A hatókört a cég méretéhez igazítjuk.",
   },
 ];
 

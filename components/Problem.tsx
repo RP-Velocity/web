@@ -2,8 +2,8 @@ import Reveal from "./Reveal";
 
 const points = [
   "Túl sok manuális folyamat - a csapat ideje adminisztrációra megy el, nem értékteremtésre.",
-  "Elszórt adatok - táblázatok, e-mailek és rendszerek között vész el a valós kép a cégről.",
-  "Skálázhatatlan működés - ami ma még kézzel megoldható, az a következő ügyfélnél már szűk keresztmetszet.",
+  "Elszórt adatok - táblázatok, e-mailek és rendszerek között elvész a valós kép a cégről.",
+  "Skálázhatatlan működés - Ami tíz ügyfélnél még működött, az húsznál már szétesik.",
 ];
 
 export default function Problem() {

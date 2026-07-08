@@ -18,7 +18,7 @@ const steps = [
   },
   {
     n: "04",
-    title: "Skálázás",
+    title: "Utánkövetés",
     body: "Mérjük az eredményeket, finomhangolunk, és a bevált rendszert újabb területekre visszük.",
   },
 ];
@@ -37,7 +37,7 @@ export default function Process() {
             </span>
             <h2 style={{ margin: 0, fontSize: 44, fontWeight: 700, letterSpacing: "-0.01em" }}>Hogyan dolgozunk</h2>
             <p style={{ margin: 0, fontSize: 20, color: "#8B93A3", maxWidth: 700, lineHeight: 1.6 }}>
-              A „komplex&quot; nálunk kiszámíthatót jelent: négy átlátható lépés, minden szakasz végén
+              A „komplex&quot; nálunk kiszámíthatóvá válik: négy átlátható lépés, minden szakasz végén
               kézzelfogható eredménnyel.
             </p>
           </div>

@@ -14,7 +14,7 @@ const pillars = [
   {
     n: "03",
     title: "Mérhető növekedés",
-    body: "Minden projekt számokban kimutatható eredménnyel zárul - azonnal, nem félév múlva.",
+    body: "Minden projekt számokban kimutatható eredménnyel zárul - heteken belül, nem félév múlva.",
   },
 ];
 

@@ -51,6 +51,7 @@ export default function Hero() {
       >
         <div style={{ display: "flex", flexDirection: "column", gap: 28, maxWidth: 680 }}>
           <span
+            className="hero-eyebrow"
             style={{
               fontFamily: "var(--font-mono-stack)",
               fontSize: 14,
@@ -87,7 +88,7 @@ export default function Hero() {
             Személyre szabott AI- és szoftveres eszközökkel alakítjuk át a manuális, széttartó folyamatokat
             átlátható, mérhetően gyorsabb működéssé.
           </p>
-          <div style={{ display: "flex", gap: 16, animation: "heroIn 0.7s ease 0.45s backwards" }}>
+          <div className="hero-actions" style={{ display: "flex", gap: 16, animation: "heroIn 0.7s ease 0.45s backwards" }}>
             <a href="#kapcsolat" className={s.btnPrimary} style={{ fontSize: 17, padding: "16px 34px" }}>
               Kérjen ingyenes felmérést
             </a>
@@ -96,7 +97,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div style={{ display: "flex", justifyContent: "center", animation: "heroIn 0.9s ease 0.4s backwards" }}>
+        <div className="hero-graphic" style={{ display: "flex", justifyContent: "center", animation: "heroIn 0.9s ease 0.4s backwards" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
             <ChevronRow colors={["#2A3B5E", "#3A62C4", "#4D7FFF"]} delay={0} />
             <div style={{ marginLeft: 60 }}>
