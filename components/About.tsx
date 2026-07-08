@@ -29,7 +29,7 @@ export default function About() {
               Ketten, akik rendet tesznek a komplexitásban
             </h2>
             <p style={{ margin: 0, fontSize: 20, color: "#8B93A3", lineHeight: 1.6 }}>
-              Azért alapítottuk az RP Velocityt, mert túl sok jó céget láttunk lassulni olyan problémákon,
+              Azért alapítottuk az RP Velocity-t, mert túl sok ígéretes céget láttunk elakadni olyan problémákon,
               amelyeket ma már modern eszközökkel hetek alatt meg lehet oldani.
             </p>
           </div>
@@ -37,9 +37,11 @@ export default function About() {
             {founders.map((f) => (
               <div
                 key={f.name}
+                className="founder-card"
                 style={{ background: "#0A0E15", border: "1px solid #1B2230", padding: 40, display: "flex", gap: 32, alignItems: "center" }}
               >
                 <div
+                  className="founder-portrait"
                   style={{
                     width: 140,
                     height: 140,

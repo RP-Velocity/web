@@ -1,8 +1,8 @@
 import Reveal from "./Reveal";
 
 const stats = [
-  { value: "−38%", label: "átlagos átfutásiidő-csökkenés a bevezetett folyamatokban" },
-  { value: "12+", label: "automatizált kulcsfolyamat tervezés alatt és élesben" },
+  { value: "~30%", label: "Ennyi időt adunk vissza a csapatának az ismétlődő feladatok automatizálásával." },
+  { value: "~20%", label: "Közvetlen költségcsökkenés az optimalizált területeken, már a bevezetés első hónapjaiban." },
   { value: "Hetek", label: "nem hónapok - az első mérhető eredményig" },
 ];
 
@@ -20,6 +20,7 @@ export default function TrustBar() {
           {stats.map((stat, i) => (
             <div
               key={stat.value}
+              className="trust-stat"
               style={{
                 display: "flex",
                 flexDirection: "column",

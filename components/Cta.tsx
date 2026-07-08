@@ -14,7 +14,7 @@ export default function Cta() {
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 32, textAlign: "center" }}>
           <BrandMark width={94} height={72} />
           <h2 style={{ margin: 0, fontSize: 52, fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.01em", textWrap: "pretty" }}>
-            Nézzük meg együtt, hol lassul a cége
+            Készítsük fel a cégét a szintlépésre!
           </h2>
           <p style={{ margin: 0, fontSize: 20, color: "#8B93A3", lineHeight: 1.6, maxWidth: 620 }}>
             Egy 30 perces, kötelezettségmentes beszélgetésben megmutatjuk, mely folyamatokban van a legnagyobb

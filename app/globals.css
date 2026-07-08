@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
   background: var(--bg-void);
   color: var(--text-primary);
   font-family: var(--font-sans-stack);
+  overflow-x: clip;
 }
 
 a {
@@ -82,14 +84,132 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+.grid-2 > *,
+.grid-3 > *,
+.grid-4 > * {
+  min-width: 0;
+}
+
+.page-root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 @media (max-width: 860px) {
   .grid-3,
   .grid-4,
   .grid-2 {
     grid-template-columns: 1fr !important;
+    gap: 32px !important;
   }
 
   .nav-links {
+    display: none !important;
+  }
+
+  .hero-graphic {
+    display: none !important;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap !important;
+  }
+
+  .hero-eyebrow {
+    font-size: 12px !important;
+    letter-spacing: 0.14em !important;
+  }
+
+  .founder-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 28px !important;
+    gap: 20px !important;
+  }
+
+  .founder-portrait {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .footer-links {
+    flex-wrap: wrap !important;
+    gap: 16px 24px !important;
+    justify-content: center;
+  }
+
+  .trust-stat {
+    border-left: none !important;
+    border-right: none !important;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .trust-stat:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .footer-inner {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .footer-brand {
+    justify-content: center;
+  }
+
+  section h2,
+  header h2 {
+    font-size: clamp(28px, 7.5vw, 44px) !important;
+  }
+
+  #kapcsolat h2 {
+    font-size: clamp(30px, 8.5vw, 52px) !important;
+  }
+
+  section,
+  header#hero {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+
+  #kapcsolat {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+  }
+
+  header#hero {
+    min-height: auto !important;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-actions a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-cta {
+    font-size: 14px !important;
+    padding: 8px 16px !important;
+  }
+}
+
+.privacy-page main {
+  padding-top: 48px !important;
+  padding-bottom: 72px !important;
+}
+
+@media print {
+  .cookie-consent {
+    display: none !important;
+  }
+
+  .privacy-page header a:last-child {
     display: none !important;
   }
 }

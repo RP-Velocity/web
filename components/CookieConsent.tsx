@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState, useSyncExternalStore } from "react";
+import { usePathname } from "next/navigation";
 import s from "./interactive.module.css";
 import {
   CONSENT_EVENT,
@@ -10,6 +11,7 @@ import {
   writeConsent,
   type Consent,
 } from "@/lib/consent";
+import { PRIVACY_PDF_PATH } from "@/lib/privacy-policy";
 
 type Draft = { analytics: boolean; marketing: boolean };
 
@@ -29,6 +31,7 @@ function getServerHasDecision() {
 }
 
 export default function CookieConsent() {
+  const pathname = usePathname();
   const hasDecision = useSyncExternalStore(
     subscribeDecision,
     getHasDecision,
@@ -68,10 +71,11 @@ export default function CookieConsent() {
     setShowSettings(false);
   }, []);
 
-  if (!open) return null;
+  if (pathname === "/adatvedelem" || !open) return null;
 
   return (
     <div
+      className="cookie-consent"
       role="region"
       aria-label="Cookie hozzájárulás"
       style={{
@@ -107,7 +111,12 @@ export default function CookieConsent() {
           >
             Sütiket használunk az oldal működéséhez, valamint — hozzájárulásod
             esetén — analitikai és marketing célokra. Részletek az{" "}
-            <a href="#hero" style={{ color: "var(--blue)", textDecoration: "underline" }}>
+            <a
+              href={PRIVACY_PDF_PATH}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "var(--blue)", textDecoration: "underline" }}
+            >
               Adatvédelmi tájékoztatóban
             </a>
             .

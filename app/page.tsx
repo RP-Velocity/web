@@ -5,16 +5,16 @@ import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
-import Results from "@/components/Results";
+// import Results from "@/components/Results";
 import About from "@/components/About";
-import Testimonials from "@/components/Testimonials";
+// import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
 import Cta from "@/components/Cta";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div style={{ background: "#0A0E15", color: "#F2F5FA" }}>
+    <div className="page-root" style={{ background: "#0A0E15", color: "#F2F5FA" }}>
       <Nav />
       <Hero />
       <TrustBar />
@@ -22,9 +22,9 @@ export default function Home() {
       <Solution />
       <Services />
       <Process />
-      <Results />
+      {/* <Results /> */}
       <About />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Faq />
       <Cta />
       <Footer />

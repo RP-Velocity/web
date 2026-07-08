@@ -37,7 +37,7 @@ export default function Nav() {
             Rólunk
           </a>
         </div>
-        <a href="#kapcsolat" className={s.navCta}>
+        <a href="#kapcsolat" className={`${s.navCta} nav-cta`}>
           Beszéljünk
         </a>
       </div>
